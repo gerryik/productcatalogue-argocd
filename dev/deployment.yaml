@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: productcatalogue
-        image: gerryik/productcatalogue:latest
+        image: gerryik/productcatalogue:0.0.1
         ports:
         - containerPort: 8020
