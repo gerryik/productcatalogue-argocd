@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: productcatalogueapp
+  name: productcatalogue
 spec:
   selector:
     matchLabels:
-      app: productcatalogueapp
+      app: productcatalogue
   replicas: 1
   template:
     metadata:
       labels:
-        app: productcatalogueapp
+        app: productcatalogue
     spec:
       containers:
-      - name: productcatalogueapp
+      - name: productcatalogue
         image: gerryik/productcatalogue:latest
         ports:
         - containerPort: 8020
